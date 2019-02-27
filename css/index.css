@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Merienda:700|Raleway&subset=latin-ext');
+
+:root {
+    font-family: 'Raleway', sans-serif;
+    --main-font-color: black;
+    --secondary-font-color: white;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+header nav .logo {
+    font-family: 'Merienda', cursive;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+header nav .menu {
+    display: flex;
+}
+
+header nav .menu {
+    padding: 0;
+    justify-content: space-around;
+}
+
+header nav .menu li{
+    list-style-type: none;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    text-transform: uppercase;
+}
+
+header nav .menu a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 580px) {
+    header nav {
+        display: flex;
+    }
+    
+    header nav .logo {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    
+    header nav .menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url(../img/cake-one.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+
+}
+ 
+header .banner p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.0rem;
+    color: var(--secondary-font-color);
+    margin: 20px;
+    padding-right: 50%;
+}
+.product-card {
+    border: 1px solid var(--main-font-color);
+    padding: 10px;
+    max-width: 200px;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+}
+.product-card .batton-container {
+    display: flex;
+    justify-content: space-around;
+}
+.product-list {
+        display: grid;
+        grid-gap: 5px;
+}
+
+@media (min-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: repeat(1fr, 1fr, 1fr);
+    }
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+
+
+
+.btn-default {
+    color: blue;
+}
+    
+
+
+
+    
+    
+
+
+
+
