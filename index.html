@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Cake Shop Page</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,7 +24,7 @@
         <div class="banner" id="home">
             <p>We are glad to add sweets to your life</p>
         </div>
-        </header>
+    </header> 
     <main>
         <h2>Products</h2>
         <div class="product-list">
@@ -66,24 +68,7 @@
                 </div>
             </article>
         </div>
-            
-            
-        <section id="portfolio">
-            <img src="cake-one.jpeg" alt="Big White Cake">
-        </section>
-        <section id="prices">
-            <figure>
-            <img src="cupcake.jpg" alt="Cupcake picture">
-            <figcaption>Cupcakes</figcaption>
-            </figure>
-            <figure>
-            <img src="candy-bar.jpg" alt="Candy-bar picture">
-            <figcaption>Candy bars</figcaption>
-            </figure>
-            <figure>
-            <img src="cake.jpg" alt="Cake picture">
-            <figcaption>Cakes</figcaption>
-            </figure>
+        <section>
             <h3>Our Prices</h3>
             <table border="1">
                 <tr>
@@ -100,25 +85,27 @@
         </section>
         <div id="feedback">
             <h3>You can write to us</h3>
-        	    <form method="POST" action="https://formspree.io/julja.2008@gmail.com">
-        	          <label>User Name:<input type="text" placeholder="User Name" name="user-name"></label><br>
-                     <label for="email-input">User Email:</label>
-                     <input type="email" name="user-email" placeholder="User Email" id="email-input"><br>
-        		      <textarea placeholder="Message"></textarea><br>
-                       <input type="submit" value="Send">
-        	    </form>
+            <form method="POST" action="https://formspree.io/julja.2008@gmail.com">
+                <label>Your Name:<input type="text" placeholder="Your Name" name="your-name"></label><br>
+                <label for="email-input">Your Email:</label>
+                <input type="email" name="your-email" placeholder="Your Email" id="email-input"><br>
+                <textarea placeholder="Message"></textarea><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
         </div>
-        </main>
-         <footer>
-            <div id="contact">
+    </main>
+    <footer>
+        <div id="contact">
             <h3>Our contacts</h3>
             <ul>
-        		<li>+38(067)-000-00-00</li>
-        		<li>www.facebook.com/cake shop</li>
-    	    </ul>
-	    </div>
+                <li>+38(067)-000-00-00</li>
+                <li>www.facebook.com/cake shop</li>
+            </ul>
+        </div>
+        <span>Сopyright 2019</span>
     </footer>
-    <span>Сopyright 2019</span>
-  </body>
-</html>
+    <script src="js/index.js"></script>
+</body>
 
+</html>

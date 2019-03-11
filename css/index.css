@@ -28,6 +28,7 @@ header nav .menu {
 header nav .menu {
     padding: 0;
     justify-content: space-around;
+    align-items: center;
 }
 
 header nav .menu li{
@@ -100,9 +101,9 @@ header .banner p {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 980px) {
+@media (min-width: 680px) {
     .product-list {
-        grid-template-columns: repeat(1fr, 1fr, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 .button {
@@ -126,13 +127,11 @@ header .banner p {
 .button:hover {
     background-color: #4CAF50;
     color: white;
-
-
-
-.btn-default {
-    color: blue;
 }
-    
+
+
+
+
 
 
 
