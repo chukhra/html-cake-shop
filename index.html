@@ -20,8 +20,8 @@
                         <a class="nav-item nav-link active" href="#">
                             Home <span class="sr-only">(cur rent)</span>
                         </a>
-                        <a class="nav-item nav-link" href="product-list">Products</a>
-                        <a class="nav-item nav-link" href="#">Prices</a>
+                        <a class="nav-item nav-link smooth" href="#product-list row">Our Creations</a>
+                        <a class="nav-item nav-link" href="#price row">Prices</a>
                         <a class="nav-item nav-link" href="#">Feedback</a>
                         <a class="nav-item nav-link" href="#">Contact</a>
                     </div>
@@ -30,13 +30,13 @@
             <div id="carouselCakeFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/weddingcake.jpeg" class="d-block w-100" alt="Wedding cake">
+                        <img src="img/wedding-cake.jpg" class="d-block w-100" alt="Wedding cake">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/fruitcake.jpeg" class="d-block w-100" alt="Fruitcake">
+                        <img src="img/fruitcake.jpg" class="d-block w-100" alt="Fruitcake">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/cupcakes.jpeg" class="d-block w-100" alt="Сhocolate cupcakes">
+                        <img src="img/cupcakes.jpg" class="d-block w-100" alt="Сhocolate cupcakes">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselCakeFade" role="button" data-slide="prev">
@@ -53,49 +53,46 @@
             </div>
         </header>
         <main>
-            <h2>Products</h2>
-            <div class="product-list row">
+            <div class="product" id="product-list row">
+                <h2>Our Creations</h2>
+            </div>
+            <div class="product-list">
                 <article class="product-card">
-                    <img src="img/cupcake.jpg" alt="Cupcake picture">
-                    <h3>Cupcake</h3>
-                    <p>A cupcake is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup.</p>
-                    <div class="button-container">
-                        <button class="button">Info
-                    </button>
-                        <button class="button">Buy
-                    </button>
+                    <img src="img/cupcake.jpg" alt="Cupcake with cherrie">
+                    <div class="description">
+                        <h3>Cupcake</h3>
+                        <p>A cupcake is a small, sweet baked good topped with frosting. You might bake cupcakes for your best friend's birthday. When you make cupcakes, you mix up cake batter and instead of baking it in large pans, pour it into the small, paper-lined indentations in a cupcake or muffin pan. Some people prefer cupcakes to cakes, because they're the perfect serving size. In Britain and Australia, cupcakes are called "fairy cakes." </p>
                     </div>
                 </article>
                 <article class="product-card">
-                    <img src="img/cupcake.jpg" alt="Cupcake picture">
-                    <h3>Cupcake</h3>
-                    <p>A cupcake is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup.</p>
-                    <div class="button-container">
-                        <button class="button">Info
-                    </button>
-                        <button class="button">Buy
-                    </button>
+                    <img src="img/cake.jpg" alt="White cake with strawberries">
+                    <div class="description">
+                        <h3>Cake</h3>
+                        <p>Cake is a form of sweet dessert that is typically baked. In their oldest forms, cakes were modifications of breads, but cakes now cover a wide range of preparations that can be simple or elaborate, and that share features with other desserts such as pastries, meringues, custards, and pies. Typical cake ingredients are flour, sugar, eggs, butter or oil or margarine, a liquid, and leavening agents, such as baking soda or baking powder. Common additional ingredients and flavourings include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like pastry cream), iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit. </p>
                     </div>
                 </article>
                 <article class="product-card">
-                    <img src="img/cupcake.jpg" alt="Cupcake picture">
-                    <h3>Cupcake</h3>
-                    <p>A cupcake is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup.</p>
-                    <div class="button-container">
-                        <button class="button">Info
-                    </button>
-                        <button class="button">Buy
-                    </button>
+                    <img src="img/candy-bar.jpg" alt="Blue candy bar">
+                    <div class="description">
+                        <h3>Candy Bar</h3>
+                        <p>We specialize in handcrafted custom decorated sugar cookies just for your special event. Each cookie is baked fresh for each order and expertly hand decorated.Each batch uses the highest quality ingredients for the best tasting product. We have been featured in several lifestyle and party blogs, including; Party Style magazine, Karaspartyideas, BannerEvents. Don't see what you are looking for? Please feel free to message us! We love making custom deisgns! </p>
                     </div>
                 </article>
             </div>
-            <section>
-                <h3>Our Prices</h3>
-                <table border="1">
+            <div class="price" id="price row">
+                <h2>Our Prices</h2>
+            </div>
+            <div class="table">
+                <table>
                     <tr>
                         <th>Cupcake</th>
                         <th>Candy Bar</th>
                         <th>Cake</th>
+                    </tr>
+                    <tr>
+                        <td>UAH</td>
+                        <td>UAH</td>
+                        <td>UAH</td>
                     </tr>
                     <tr>
                         <td>30 for one</td>
@@ -103,27 +100,26 @@
                         <td>600 per kilogram</td>
                     </tr>
                 </table>
-            </section>
-            <div id="feedback">
+            </div>
+            <div class="feedback" id="feedback">
                 <h3>You can write to us</h3>
-                <form method="POST" action="https://formspree.io/julja.2008@gmail.com">
-                    <label>
-                        Your Name:<input type="text" placeholder="Your Name" name="your-name">
-                    </label>
-                    <br>
-                    <label for="email-input">Your Email:</label>
-                    <input type="email" name="your-email" placeholder="Your Email" id="email-input">
-                    <br>
-                    <textarea placeholder="Message"></textarea>
-                    <br>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
-                </form>
+            </div>
+            <div>
+                <form class="form" method="POST" action="https://formspree.io/julja.2008@gmail.com">
+  <h2>CONTACT US</h2>
+  <p type="Name:"><input placeholder="Write your name here.."></input></p>
+  <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+  <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+  <button>Send Message</button>
+  
+</form>
             </div>
         </main>
         <footer>
-            <div id="contact">
+            <div class="contact" id="contact">
                 <h3>Our contacts</h3>
+            </div>
+            <div>
                 <ul>
                     <li>+38(067)-000-00-00</li>
                     <li>www.facebook.com/cake shop</li>
@@ -131,9 +127,13 @@
             </div>
             <span>Сopyright 2019</span>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>
